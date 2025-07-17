@@ -4,11 +4,11 @@ alphabet='abcdefghijklmnopqrstuvwxyz'
 class enigma:
 	def __init__(self, settings):
 		#initialize the components
-		self.plugboard=plugboard(settings[0][0])
-		self.rotor1=rotor(settings[1][0], settings[1][1], settings[1][2], settings[1][3])
-		self.rotor2=rotor(settings[2][0], settings[2][1], settings[2][2], settings[2][3])
-		self.rotor3=rotor(settings[3][0], settings[3][1], settings[3][2], settings[3][3])
-		self.reflector=reflector(settings[4][0])
+		self.plugboard=plugboard(*settings['plugboard'])
+		self.rotor1=rotor(*settings['rotor1'])
+		self.rotor2=rotor(*settings['rotor2'])
+		self.rotor3=rotor(*settings['rotor3'])
+		self.reflector=reflector(*settings['reflector'])
 	def run(self, char):
 		#initialization
 		u=char==char.upper()

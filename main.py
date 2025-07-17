@@ -16,13 +16,13 @@ settings list follows:
 
 rer determines if settings should reset for each new input
 '''
-settings = [
-	('ab cd ef gh',),
-	('a', 'a', 'ekmflgdqvzntowyhxuspaibrcj', 'q'),
-	('a', 'e', 'ajdksiruxblhwtmcqgznpyfvoe', 'e'),
-	('a', 'z', 'bdfhjlcprtxvznyeiwgakmusqo', 'v'),
-	('ejmzalyxvbwfcrquontspikhgd',),
-]
+settings = {
+	'plugboard':	['ab cd ef gh'],
+	'rotor1':		['a', 'a', 'ekmflgdqvzntowyhxuspaibrcj', 'q'],
+	'rotor2':		['a', 'e', 'ajdksiruxblhwtmcqgznpyfvoe', 'e'],
+	'rotor3':		['a', 'z', 'bdfhjlcprtxvznyeiwgakmusqo', 'v'],
+	'reflector':	['ejmzalyxvbwfcrquontspikhgd',],
+}
 rer = True
 
 #io handling
